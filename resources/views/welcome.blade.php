@@ -1,20 +1,101 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Visi Global Teknologi</title>
-        <meta name="description" content="Visi Global Teknologi">
-        <meta name="keywords" content="Visi Global Teknologi" />
-        <meta name="robots" content="INDEX,FOLLOW">
+@extends('layouts.techbiz-it.master')
 
-        <!-- Mobile Specific Metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+@section('css')
+@endsection
 
-        <!-- Favicons - Place favicon.ico in the root directory -->
-        <link rel="apple-touch-icon" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
-        <link rel="apple-touch-icon" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
-        <link rel="apple-touch-icon" sizes="16x16" href="favicon_io/favicon-16x16.png">
-        <link rel="apple-touch-icon" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    </head>
-</html>
+@section('content')
+<section>
+    <div class="vs-carousel hero-layout5" data-slide-show="1" data-fade="true" data-arrows="true" data-prev-arrow="far fa-arrow-left" data-next-arrow="far fa-arrow-right">
+        <div>
+            <div class="hero-inner">
+                <div class="hero-bg" data-bg-src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-1.jpg') }}"></div>
+                <div class="hero-shape1"></div>
+                <div class="hero-shape2"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-1.png') }}" alt="bg shape"></div>
+                <div class="hero-shape3"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-2.png') }}" alt="bg shape"></div>
+                <div class="hero-shape4"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-3.png') }}" alt="bg shape"></div>
+                <div class="hero-shape5"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-4.png') }}" alt="bg shape"></div>
+                <div class="hero-info">
+                    <div class="media-icon"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-call-icon.png') }}" alt="icon"></div>
+                    <div class="media-body">
+                        <span class="media-label">Phone Number</span>
+                        <div class="media-link"><a href="tel:+58925621536">+589 2562 1536</a></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-subtitle">Consistent &amp; Reliable...</span>
+                        <h1 class="hero-title">Business Solution</h1>
+                        <div class="hero-list">
+                            <ul>
+                                <li><i class="far fa-arrow-right"></i>For Your Newly Started Company</li>
+                                <li><i class="far fa-arrow-right"></i>Easy To Fast Starup Growth</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hero-inner">
+                <div class="hero-bg" data-bg-src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-2.jpg') }}"></div>
+                <div class="hero-shape1"></div>
+                <div class="hero-shape2"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-1.png') }}" alt="bg shape"></div>
+                <div class="hero-shape3"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-2.png') }}" alt="bg shape"></div>
+                <div class="hero-shape4"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-3.png') }}" alt="bg shape"></div>
+                <div class="hero-shape5"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-4.png') }}" alt="bg shape"></div>
+                <div class="hero-info">
+                    <div class="media-icon"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-call-icon.png') }}" alt="icon"></div>
+                    <div class="media-body">
+                        <span class="media-label">Phone Number</span>
+                        <div class="media-link"><a href="tel:+58925621536">+589 2562 1536</a></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-subtitle">Take Support &amp; Coding...</span>
+                        <h1 class="hero-title">Grow Business</h1>
+                        <div class="hero-list">
+                            <ul>
+                                <li><i class="far fa-arrow-right"></i>For Your Newly Started Company</li>
+                                <li><i class="far fa-arrow-right"></i>Easy To Fast Starup Growth</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hero-inner">
+                <div class="hero-bg" data-bg-src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-2.jpg') }}"></div>
+                <div class="hero-shape1"></div>
+                <div class="hero-shape2"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-1.png') }}" alt="bg shape"></div>
+                <div class="hero-shape3"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-2.png') }}" alt="bg shape"></div>
+                <div class="hero-shape4"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-3.png') }}" alt="bg shape"></div>
+                <div class="hero-shape5"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-4.png') }}" alt="bg shape"></div>
+                <div class="hero-info">
+                    <div class="media-icon"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-call-icon.png') }}" alt="icon"></div>
+                    <div class="media-body">
+                        <span class="media-label">Phone Number</span>
+                        <div class="media-link"><a href="tel:+58925621536">+589 2562 1536</a></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-subtitle">Share Company Success...</span>
+                            <h1 class="hero-title">Set Digital Store</h1>
+                        <div class="hero-list">
+                            <ul>
+                                <li><i class="far fa-arrow-right"></i>For Your Newly Started Company</li>
+                                <li><i class="far fa-arrow-right"></i>Easy To Fast Starup Growth</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@endsection
+
+@section('script')
+@endsection
