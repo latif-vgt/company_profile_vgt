@@ -11,6 +11,9 @@ use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
 use FilamentTiptapEditor\TiptapEditor;
 use Filament\Forms\Components\Textarea;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Forms\Components\FileUpload;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -51,7 +54,15 @@ class NewsContentResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('title')->searchable(),
+
+                IconColumn::make('published')->boolean(),
+
+                ImageColumn::make('image')->disk('news-content-image'),
+
+                TextColumn::make('published_datetime')->dateTime()->label('Published Datetime'),
+
+                TextColumn::make('news_category.name')->searchable(),
             ])
             ->filters([
                 //
