@@ -44,6 +44,14 @@ return [
             'throw' => false,
         ],
 
+        'news-content-image' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/news-content-image'),
+            'url' => env('APP_URL').'/storage/news-content-image',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

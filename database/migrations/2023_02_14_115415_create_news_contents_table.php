@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('image')->unique();
             $table->boolean('published')->default(true);
             $table->text('information');
-            $table->dateTime('published_datetime');
+            $table->dateTime('published_datetime')->default(now());
             $table->unsignedBigInteger('news_category_id');
             $table->timestamps();
 
