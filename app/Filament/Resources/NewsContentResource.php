@@ -36,7 +36,7 @@ class NewsContentResource extends Resource
                     ->maxLength(3)
                     ->maxLength(255),
 
-                FileUpload::make('image')->disk('news-content-image'),
+                FileUpload::make('image')->disk('news-content-image')->required(),
 
                 Select::make('published')->required()
                     ->options([
@@ -44,7 +44,7 @@ class NewsContentResource extends Resource
                         1 => 'Yes'
                 ]),
 
-                Textarea::make('information')->rows(10)->cols(20),
+                Textarea::make('information')->rows(10)->cols(20)->required(),
 
                 Select::make('news_category_id')->required()->relationship('news_category', 'name'),
             ]);
