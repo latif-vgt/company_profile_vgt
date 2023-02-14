@@ -18,7 +18,7 @@
                     <div class="media-icon"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-call-icon.png') }}" alt="icon"></div>
                     <div class="media-body">
                         <span class="media-label">Phone Number</span>
-                        <div class="media-link"><a href="tel:+58925621536">+589 2562 1536</a></div>
+                        <div class="media-link"><a href="tel:+{{ $informationContents['company_phone_number'] }}">{{ $informationContents['company_phone_number'] }}</a></div>
                     </div>
                 </div>
                 <div class="container">
@@ -76,7 +76,7 @@
                     <div class="media-icon"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-call-icon.png') }}" alt="icon"></div>
                     <div class="media-body">
                         <span class="media-label">Phone Number</span>
-                        <div class="media-link"><a href="tel:+58925621536">+589 2562 1536</a></div>
+                        <div class="media-link"><a href="tel:+{{ $informationContents['company_phone_number'] }}">{{ $informationContents['company_phone_number'] }}</a></div>
                     </div>
                 </div>
                 <div class="container">

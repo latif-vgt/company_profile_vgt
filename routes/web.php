@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\InformationContent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $informationContents = InformationContent::get()->pluck('value', 'key')->toArray();
+    return view('welcome', compact('informationContents'));
 })->name('welcome');

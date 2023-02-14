@@ -9,9 +9,9 @@
                                 <a href="{{ route('welcome') }}"><img src="{{ URL::asset('techbiz-it/assets/img/logo.png') }}" alt="TechBiz" class="logo"></a>
                             </div>
                             <div class="footer-info-list">
-                                <p class="info"><i class="fal fa-map-marker-alt"></i>215 Ulta Market Ave, Brooklyn CA, 159336</p>
-                                <p class="info"><i class="fal fa-envelope"></i><a href="mailto:example@email.com">example@email.com</a></p>
-                                <p class="info"><i class="fal fa-phone-alt"></i><a href="tel:+125145612565">+125 (1456) 12565</a></p>
+                                <p class="info"><i class="fal fa-map-marker-alt"></i>{{ $informationContents['company_address'] }}</p>
+                                <p class="info"><i class="fal fa-envelope"></i><a href="mailto:{{ $informationContents['company_email'] }}">{{ $informationContents['company_email'] }}</a></p>
+                                <p class="info"><i class="fal fa-phone-alt"></i><a href="tel:+{{ $informationContents['company_phone_number'] }}">{{ $informationContents['company_phone_number'] }}</a></p>
                             </div>
                             <div class="footer-social style2">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -52,7 +52,7 @@
     </div>
     <div class="copyright-wrap">
         <div class="container">
-            <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2023 <a href="{{ route('welcome') }}">Visi Global Teknologi</a>. All rights reserved by <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a>.</p>
+            <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2023 <a href="{{ route('welcome') }}">Visi Global Teknologi</a></p>
         </div>
     </div>
 </footer>
