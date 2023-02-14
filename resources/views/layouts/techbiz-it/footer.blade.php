@@ -28,7 +28,7 @@
                         <h3 class="widget_title">Useful Links</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
-                                <li><a href="#">Our Compnay</a></li>
+                                <li><a href="#">Our Company</a></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Latest News</a></li>
                                 <li><a href="#">Contact Us</a></li>
