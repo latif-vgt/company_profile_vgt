@@ -6,7 +6,7 @@
                     <div class="widget footer-widget">
                         <div class="vs-widget-about">
                             <div class="footer-logo">
-                                <a href="{{ route('welcome') }}"><img src="{{ URL::asset('techbiz-it/assets/img/logo.png') }}" alt="TechBiz" class="logo"></a>
+                                <a href="{{ route('welcome') }}"><img width="280" src="{{ URL::asset('vgt/logo_visi.png') }}" alt="TechBiz" class="logo"></a>
                             </div>
                             <div class="footer-info-list">
                                 <p class="info"><i class="fal fa-map-marker-alt"></i>{{ $informationContents['company_address'] }}</p>

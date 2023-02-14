@@ -3,7 +3,7 @@
     <div class="vs-menu-area text-center">
         <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
-            <a href="{{ route('welcome') }}"><img src="{{ URL::asset('techbiz-it/assets/img/logo.png') }}" alt="TechBiz" class="logo"></a>
+            <a href="{{ route('welcome') }}"><img width="280" src="{{ URL::asset('vgt/logo_visi.png') }}" alt="TechBiz" class="logo"></a>
         </div>
         <div class="vs-mobile-menu">
             <ul>
@@ -27,7 +27,7 @@
         <div class="row align-items-center justify-content-between gx-15">
             <div class="col-auto">
                 <div class="header-logo">
-                    <a href="{{ route('welcome') }}"><img src="{{ URL::asset('techbiz-it/assets/img/logo.png') }}" alt="TechBiz" class="logo"></a>
+                    <a href="{{ route('welcome') }}"><img width="280" src="{{ URL::asset('vgt/logo_visi.png') }}" alt="TechBiz" class="logo"></a>
                 </div>
             </div>
             <div class="col text-center">
