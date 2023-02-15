@@ -34,7 +34,7 @@
             </h1>
             <div style="top:713px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:24px; width:1000px; height:28px;" class="ls-l ls-hide-desktop ls-hide-phone ls-html-layer" data-ls="offsetyin:50; durationin:1500; delayin:900; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">
                 <div class="ls-btn-group justify-content-center">
-                    <a href="#" class="vs-btn ls-hero-btn">ABOUT US<i class="far fa-arrow-right"></i></a>
+                    <a href="{{ route('about-us') }}" class="vs-btn ls-hero-btn">ABOUT US<i class="far fa-arrow-right"></i></a>
                     <a href="#" class="vs-btn style2 ls-hero-btn">READ MORE<i class="far fa-arrow-right"></i></a>
                 </div>
             </div>
