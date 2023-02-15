@@ -31,7 +31,6 @@
                 <span class="loader"></span>
             </div>
         </div>
-        @include('layouts.techbiz-it.menu')
         @yield('content')
         @include('layouts.techbiz-it.footer')
         @include('layouts.techbiz-it.vendor-scripts')

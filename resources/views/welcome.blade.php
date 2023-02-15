@@ -2,7 +2,7 @@
 
 @section('css')
 @endsection
-
+@include('layouts.techbiz-it.menu-homepage')
 @section('content')
 <section>
     <div class="vs-carousel hero-layout5" data-slide-show="1" data-fade="true" data-arrows="true" data-prev-arrow="far fa-arrow-left" data-next-arrow="far fa-arrow-right">

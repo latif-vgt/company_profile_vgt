@@ -9,7 +9,7 @@
                             <div class="footer-info-list">
                                 <p class="info"><i class="fal fa-map-marker-alt"></i>{{ $informationContents['company_address'] }}</p>
                                 <p class="info"><i class="fal fa-envelope"></i><a href="mailto:{{ $informationContents['company_email'] }}">{{ $informationContents['company_email'] }}</a></p>
-                                <p class="info"><i class="fal fa-phone-alt"></i><a href="tel:+{{ $informationContents['company_phone_number'] }}">{{ $informationContents['company_phone_number'] }}</a></p>
+                                <p class="info"><i class="fal fa-phone-alt"></i><a href="tel:{{ $informationContents['company_phone_number'] }}">{{ $informationContents['company_phone_number'] }}</a></p>
                             </div>
                             <div class="footer-social style2">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -27,7 +27,7 @@
                         <div class="menu-all-pages-container">
                             <ul class="menu">
                                 <li><a href="#">Our Company</a></li>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="{{ route('about-us') }}">About Us</a></li>
                                 <li><a href="#">Latest News</a></li>
                                 <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
