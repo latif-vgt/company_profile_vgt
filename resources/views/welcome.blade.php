@@ -14,13 +14,6 @@
                 <div class="hero-shape3"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-2.png') }}" alt="bg shape"></div>
                 <div class="hero-shape4"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-3.png') }}" alt="bg shape"></div>
                 <div class="hero-shape5"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-4.png') }}" alt="bg shape"></div>
-                <div class="hero-info">
-                    <div class="media-icon"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-call-icon.png') }}" alt="icon"></div>
-                    <div class="media-body">
-                        <span class="media-label">Phone Number</span>
-                        <div class="media-link"><a href="tel:+{{ $informationContents['company_phone_number'] }}">{{ $informationContents['company_phone_number'] }}</a></div>
-                    </div>
-                </div>
                 <div class="container">
                     <div class="hero-content">
                         <span class="hero-subtitle">Consistent &amp; Reliable...</span>
@@ -43,13 +36,6 @@
                 <div class="hero-shape3"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-2.png') }}" alt="bg shape"></div>
                 <div class="hero-shape4"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-3.png') }}" alt="bg shape"></div>
                 <div class="hero-shape5"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-4.png') }}" alt="bg shape"></div>
-                <div class="hero-info">
-                    <div class="media-icon"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-call-icon.png') }}" alt="icon"></div>
-                    <div class="media-body">
-                        <span class="media-label">Phone Number</span>
-                        <div class="media-link"><a href="tel:+58925621536">+589 2562 1536</a></div>
-                    </div>
-                </div>
                 <div class="container">
                     <div class="hero-content">
                         <span class="hero-subtitle">Take Support &amp; Coding...</span>
@@ -72,13 +58,6 @@
                 <div class="hero-shape3"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-2.png') }}" alt="bg shape"></div>
                 <div class="hero-shape4"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-3.png') }}" alt="bg shape"></div>
                 <div class="hero-shape5"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-shape-4.png') }}" alt="bg shape"></div>
-                <div class="hero-info">
-                    <div class="media-icon"><img src="{{ URL::asset('techbiz-it/assets/img/hero/hero-5-call-icon.png') }}" alt="icon"></div>
-                    <div class="media-body">
-                        <span class="media-label">Phone Number</span>
-                        <div class="media-link"><a href="tel:+{{ $informationContents['company_phone_number'] }}">{{ $informationContents['company_phone_number'] }}</a></div>
-                    </div>
-                </div>
                 <div class="container">
                     <div class="hero-content">
                         <span class="hero-subtitle">Share Company Success...</span>
