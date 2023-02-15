@@ -21,9 +21,9 @@
 </div>
 
 <!--============================== Service Area ==============================-->
-<section class="space-top space-extra-bottom">
-    <div class="container wow fadeInUp" data-wow-delay="0.2s">
-        <div class="row vs-carousel" data-slide-show="3" data-md-slide-show="2">
+<div>
+    <div class="container space-top space-extra-bottom">
+        <div class="row vs-carousel" data-slide-show="3" data-md-slide-show="2" data-arrows="true">
             <div class="col-md-6 col-lg-4">
                 <div class="service-style1 layout3">
                     <div class="service-bg" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
@@ -74,7 +74,7 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 @endsection
 
 @section('script')

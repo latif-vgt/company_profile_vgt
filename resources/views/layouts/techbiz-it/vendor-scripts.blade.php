@@ -1,8 +1,11 @@
 <!-- Jquery -->
 <script src="{{ URL::asset('techbiz-it/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
 <!-- Slick Slider -->
-<!-- <script src="assets/js/app.min.js"></script> -->
 <script src="{{ URL::asset('techbiz-it/assets/js/slick.min.js') }}"></script>
+<!-- Layerslider -->
+<script src="{{ URL::asset('techbiz-it/assets/js/layerslider.utils.js') }}"></script>
+<script src="{{ URL::asset('techbiz-it/assets/js/layerslider.transitions.js') }}"></script>
+<script src="{{ URL::asset('techbiz-it/assets/js/layerslider.kreaturamedia.jquery.js') }}"></script>
 <!-- Bootstrap -->
 <script src="{{ URL::asset('techbiz-it/assets/js/bootstrap.min.js') }}"></script>
 <!-- WOW.js Animation -->

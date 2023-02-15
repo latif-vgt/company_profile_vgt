@@ -23,3 +23,15 @@ Route::get('about-us', function () {
     $informationContents = InformationContent::get()->pluck('value', 'key')->toArray();
     return view('about-us', compact('informationContents'));
 })->name('about-us');
+
+Route::get('contact', function () {
+})->name('contact');
+
+Route::get('services', function () {
+})->name('services');
+
+Route::get('news', function () {
+})->name('news');
+
+Route::get('blog', function () {
+})->name('blog');
