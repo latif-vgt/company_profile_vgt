@@ -63,7 +63,7 @@
                     <div class="row justify-content-between align-items-center gx-sm-0">
                         <div class="col">
                             <div class="header-logo">
-                                <a href="{{ route('welcome') }}"><img src="{{ URL::asset('techbiz-it/assets/img/logo.png') }}" alt="VisiGlobalTeknologi" class="logo"></a>
+                                <a href="{{ route('welcome') }}"><img src="{{ URL::asset('vgt/logo-visi-18049.png') }}" alt="VisiGlobalTeknologi" class="logo"></a>
                             </div>
                         </div>
                         <div class="col-auto header-info ">

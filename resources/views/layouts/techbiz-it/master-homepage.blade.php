@@ -92,7 +92,7 @@
                             <div class="row align-items-center justify-content-between">
                                 <div class="col-auto">
                                     <div class="logo-style1">
-                                        <a href="{{ route('welcome') }}"><img src="{{ URL::asset('techbiz-it/assets/img/logo-white.png') }}" alt="VisiGlobalTeknologi" class="logo"></a>
+                                        <a href="{{ route('welcome') }}"><img src="{{ URL::asset('vgt/logo-visi-18049.png') }}" alt="VisiGlobalTeknologi" class="logo"></a>
                                     </div>
                                 </div>
                                 <div class="col-auto">
