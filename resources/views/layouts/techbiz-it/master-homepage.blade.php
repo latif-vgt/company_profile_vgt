@@ -102,7 +102,7 @@
                                                 <a href="{{ route('welcome') }}">Home</a>
                                             </li>
                                             <li>
-                                                <a href="#">About Us</a>
+                                                <a href="{{ route('about-us') }}">About Us</a>
                                             </li>
                                             <li>
                                                 <a href="#">Contact</a>
