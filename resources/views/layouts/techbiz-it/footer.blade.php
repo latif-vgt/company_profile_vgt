@@ -4,10 +4,8 @@
             <div class="row justify-content-between">
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget footer-widget">
+                        <h4 class="widget_title">Visi Global Teknologi</h4>
                         <div class="vs-widget-about">
-                            <div class="footer-logo">
-                                <a href="{{ route('welcome') }}"><img width="280" src="{{ URL::asset('vgt/logo_visi.png') }}" alt="TechBiz" class="logo"></a>
-                            </div>
                             <div class="footer-info-list">
                                 <p class="info"><i class="fal fa-map-marker-alt"></i>{{ $informationContents['company_address'] }}</p>
                                 <p class="info"><i class="fal fa-envelope"></i><a href="mailto:{{ $informationContents['company_email'] }}">{{ $informationContents['company_email'] }}</a></p>
@@ -24,7 +22,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-auto">
-                    <div class="widget widget_nav_menu  footer-widget">
+                    <div class="widget widget_nav_menu footer-widget">
                         <h3 class="widget_title">Useful Links</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
@@ -38,13 +36,38 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-auto">
-                    <div class="widget  footer-widget">
+                    <div class="widget footer-widget">
                         <h4 class="widget_title">Connect With Us</h4>
                         <form class="newsletter-form2">
                             <p class="form_text">Subscribe Our Newsletter For Getting Quick Updates</p>
                             <input class="form-control" type="email" placeholder="Your Email Address">
                             <button type="submit" class="vs-btn mask-style1">Subscribe</button>
                         </form>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget footer-widget">
+                        <h4 class="widget_title">Gallery Posts</h4>
+                        <div class="sidebar-gallery">
+                            <div class="gallery-thumb">
+                                <img src="{{ URL::asset('techbiz-it/assets/img/widget/gal-1-1.jpg') }}" alt="Gallery Image" class="w-100">
+                            </div>
+                            <div class="gallery-thumb">
+                                <img src="{{ URL::asset('techbiz-it/assets/img/widget/gal-1-2.jpg') }}" alt="Gallery Image" class="w-100">
+                            </div>
+                            <div class="gallery-thumb">
+                                <img src="{{ URL::asset('techbiz-it/assets/img/widget/gal-1-3.jpg') }}" alt="Gallery Image" class="w-100">
+                            </div>
+                            <div class="gallery-thumb">
+                                <img src="{{ URL::asset('techbiz-it/assets/img/widget/gal-1-4.jpg') }}" alt="Gallery Image" class="w-100">
+                            </div>
+                            <div class="gallery-thumb">
+                                <img src="{{ URL::asset('techbiz-it/assets/img/widget/gal-1-5.jpg') }}" alt="Gallery Image" class="w-100">
+                            </div>
+                            <div class="gallery-thumb">
+                                <img src="{{ URL::asset('techbiz-it/assets/img/widget/gal-1-6.jpg') }}" alt="Gallery Image" class="w-100">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
