@@ -52,4 +52,25 @@
             </div>
         </div>
     </div>
+    <div class="sticky-wrapper">
+        <div class="sticky-active">
+            <!-- Main Menu Area -->
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <nav class="main-menu menu-style1 d-none d-lg-block">
+                            <ul>
+                                <li>
+                                    <a href="{{ route('welcome') }}">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('about-us') }}">About Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
