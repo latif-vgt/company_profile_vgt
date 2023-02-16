@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\WelcomeController;
 
 /*
@@ -16,13 +17,11 @@ use App\Http\Controllers\WelcomeController;
 */
 
 Route::get('/', WelcomeController::class)->name('welcome');
-Route::get('/about-us', AboutUsController::class)->name('about-us');
+Route::get('about-us', AboutUsController::class)->name('about-us');
+Route::get('service', ServiceController::class)->name('service');
 
 Route::get('contact', function () {
 })->name('contact');
-
-Route::get('services', function () {
-})->name('services');
 
 Route::get('news', function () {
 })->name('news');

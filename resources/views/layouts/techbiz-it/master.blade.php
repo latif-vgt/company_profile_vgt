@@ -52,7 +52,7 @@
                             <a href="{{ route('about-us') }}">About Us</a>
                         </li>
                         <li>
-                            <a href="#">Services</a>
+                            <a href="{{ route('service') }}">Services</a>
                         </li>
                         <li>
                             <a href="#">News</a>
@@ -117,7 +117,7 @@
                                             <a href="{{ route('about-us') }}">About Us</a>
                                         </li>
                                         <li>
-                                            <a href="#">Services</a>
+                                            <a href="{{ route('service') }}">Services</a>
                                         </li>
                                         <li>
                                             <a href="#">News</a>

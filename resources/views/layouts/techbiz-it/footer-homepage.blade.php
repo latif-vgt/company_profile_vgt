@@ -33,7 +33,7 @@
                                 <li><a href="#">Meet The Teams</a></li>
                                 <li><a href="#">Our Projects</a></li>
                                 <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Our Services</a></li>
+                                <li><a href="{{ route('service') }}">Our Services</a></li>
                                 <li><a href="{{ route('about-us') }}">About Us</a></li>
                                 <li><a href="#">Our Mission</a></li>
                                 <li><a href="#">Meet The Teams</a></li>
