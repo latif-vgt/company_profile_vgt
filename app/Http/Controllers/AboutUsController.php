@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Client;
 use Illuminate\Http\Request;
 use App\Models\InformationContent;
 
-class WelcomeController extends Controller
+class AboutUsController extends Controller
 {
     /**
      * Handle the incoming request.
@@ -16,9 +15,8 @@ class WelcomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $clients = Client::where('enabled', 1)->get();
         $informationContents = InformationContent::get()->pluck('value', 'key')->toArray();
 
-        return view('welcome', compact('informationContents', 'clients'));
+        return view('about-us', compact('informationContents'));
     }
 }

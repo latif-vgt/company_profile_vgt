@@ -1,7 +1,7 @@
 <?php
 
-use App\Models\InformationContent;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\WelcomeController;
 
 /*
@@ -16,10 +16,7 @@ use App\Http\Controllers\WelcomeController;
 */
 
 Route::get('/', WelcomeController::class)->name('welcome');
-Route::get('about-us', function () {
-    $informationContents = InformationContent::get()->pluck('value', 'key')->toArray();
-    return view('about-us', compact('informationContents'));
-})->name('about-us');
+Route::get('/about-us', AboutUsController::class)->name('about-us');
 
 Route::get('contact', function () {
 })->name('contact');
