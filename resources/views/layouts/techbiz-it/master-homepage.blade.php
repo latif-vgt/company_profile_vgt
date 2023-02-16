@@ -51,6 +51,18 @@
                         <li>
                             <a href="{{ route('about-us') }}">About Us</a>
                         </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -105,16 +117,16 @@
                                                 <a href="{{ route('about-us') }}">About Us</a>
                                             </li>
                                             <li>
-                                                <a href="#">Contact</a>
-                                            </li>
-                                            <li>
                                                 <a href="#">Services</a>
                                             </li>
                                             <li>
                                                 <a href="#">News</a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('blog') }}">Blog</a>
+                                                <a href="#">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Contact</a>
                                             </li>
                                         </ul>
                                     </nav>
