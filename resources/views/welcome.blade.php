@@ -72,7 +72,7 @@
                     <div class="col-xl-4">
                         <div class="feature-style2">
                             <div class="feature-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/fe-2-1.png') }}" alt="Features"></div>
-                            <h3 class="feature-title h5"><a class="text-inherit" href="#">IT Solution</a></h3>
+                            <h3 class="feature-title h5"><a class="text-inherit" href="#">IT Prototyping Consultation</a></h3>
                             <p class="feature-text">Seize magnetic before visa alignment network wireless whereas frictionless</p>
                             <a href="#" class="link-btn">Read Details<i class="far fa-arrow-right"></i></a>
                         </div>
@@ -80,7 +80,7 @@
                     <div class="col-xl-4">
                         <div class="feature-style2">
                             <div class="feature-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/fe-2-2.png') }}" alt="Features"></div>
-                            <h3 class="feature-title h5"><a class="text-inherit" href="#">IT Consultant</a></h3>
+                            <h3 class="feature-title h5"><a class="text-inherit" href="#">Infrastructure Solution</a></h3>
                             <p class="feature-text">Seize magnetic before visa alignment network wireless whereas frictionless</p>
                             <a href="#" class="link-btn">Read Details<i class="far fa-arrow-right"></i></a>
                         </div>
@@ -88,7 +88,7 @@
                     <div class="col-xl-4">
                         <div class="feature-style2">
                             <div class="feature-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/fe-2-3.png') }}" alt="Features"></div>
-                            <h3 class="feature-title h5"><a class="text-inherit" href="#">Cyber Security</a></h3>
+                            <h3 class="feature-title h5"><a class="text-inherit" href="#">AI / Smart Application</a></h3>
                             <p class="feature-text">Seize magnetic before visa alignment network wireless whereas frictionless</p>
                             <a href="#" class="link-btn">Read Details<i class="far fa-arrow-right"></i></a>
                         </div>
