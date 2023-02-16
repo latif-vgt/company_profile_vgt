@@ -417,12 +417,11 @@
 <div class=" space" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/brand-bg-2-1.jpg') }}">
     <div class="container">
         <div class="row vs-carousel text-center" data-slide-show="5" data-md-slide-show="3" data-sm-slide-show="2" data-xs-slide-show="2">
-            <div class="col-auto"><img src="{{ URL::asset('techbiz-it/assets/img/brand/br-1-1.png') }}" alt="Brand"></div>
-            <div class="col-auto"><img src="{{ URL::asset('techbiz-it/assets/img/brand/br-1-2.png') }}" alt="Brand"></div>
-            <div class="col-auto"><img src="{{ URL::asset('techbiz-it/assets/img/brand/br-1-3.png') }}" alt="Brand"></div>
-            <div class="col-auto"><img src="{{ URL::asset('techbiz-it/assets/img/brand/br-1-4.png') }}" alt="Brand"></div>
-            <div class="col-auto"><img src="{{ URL::asset('techbiz-it/assets/img/brand/br-1-5.png') }}" alt="Brand"></div>
-            <div class="col-auto"><img src="{{ URL::asset('techbiz-it/assets/img/brand/br-1-6.png') }}" alt="Brand"></div>
+            @if ($clients->count() > 0)
+                @foreach ($clients as $item)
+                    <div class="col-auto"><img width="100" height="50" src="{{ \Storage::disk('client-logo')->url($item->logo) }}" alt="Client"></div>
+                @endforeach
+            @endif
         </div>
     </div>
 </div>
