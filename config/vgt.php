@@ -6,7 +6,7 @@ return [
         'company_socmed_linkedin' => '#',
         'company_socmed_youtube' => '#',
         'company_socmed_instagram' => '#',
-        'company_profile_video' => '#',
+        'company_profile_video' => 'https://www.youtube.com/watch?v=4QylOvVaE00',
         'company_slogan_title' => '#',
         'company_slogan_detail' => '#',
         'company_category' => '#',
