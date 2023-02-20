@@ -50,11 +50,11 @@ class OurServiceResource extends Resource
             ->columns([
                 TextColumn::make('name'),
 
-                TextColumn::make('description'),
-
                 ImageColumn::make('icon')->disk('service-icon'),
 
                 IconColumn::make('enabled')->boolean(),
+
+                TextColumn::make('description'),
             ])
             ->filters([
                 //
