@@ -323,8 +323,8 @@
     <div class="container">
         <div class="row vs-carousel text-center" data-slide-show="5" data-md-slide-show="3" data-sm-slide-show="2" data-xs-slide-show="2">
             @if (count($clients) > 0)
-                @foreach ($clients as $item)
-                    <div class="col-auto"><img width="100" height="50" src="{{ \Storage::disk('client-logo')->url($item->logo) }}" alt="Client"></div>
+                @foreach ($clients as $key => $value)
+                    <div class="col-auto"><img width="100" height="50" src="{{ \Storage::disk('client-logo')->url($value['logo']) }}" alt="Client"></div>
                 @endforeach
             @endif
         </div>

@@ -20,8 +20,7 @@
             <div class="col-lg-8">
                 <div class="mb-3 pb-3"><img src="{{ URL::asset('techbiz-it/assets/img/project/p-d-1-1.jpg') }}" alt="About Us Image"></div>
                 <h2 class="h4">PT Visi Global Teknologi</h2>
-                <p>PT Visi Global Teknologi has become a reliable IT solution provider. Holisticly benchmark functional products before excellent methods of empowerment. Seamlessly visualize innovative web-readiness whereas extensive initiatives. Completely unleash frictionless data via end-to-end services. Continually unleash virtual e-tailers through magnetic core competencies. Interactively engage distributed alignments via focused alignments. Dynamically fabricate excellent innovation for go forward technology. Intrinsicly impact empowered scenarios after cost effective outsourcing. Synergistically productivate pandemic e-business rather than state of the art e-tailers. Continually expedite customized information with go forward potentialities.</p>
-                <p class="mb-4">Completely unleash frictionless data via end-to-end services. Continually unleash virtual e-tailers through magnetic core competencies. Interactively engage distributed alignments via focused alignments. Dynamically fabricate excellent innovation for go forward technology. Intrinsicly impact empowered scenarios after cost effective outsourcing. Synergistically productivate pandemic e-business rather than state...</p>
+                <p>{{ $informationContents['company_about_us'] }}</p>
             </div>
             <div class="col-lg-4 mt-30 mt-lg-0">
                 <div class="project-box">
@@ -44,7 +43,7 @@
                         <div class="project-box__icon"><i class="fas fa-calendar-alt"></i></div>
                         <div class="media-body">
                             <span class="project-box__label">Birth Date:</span>
-                            <h4 class="project-box__info">25 March, 2020</h4>
+                            <h4 class="project-box__info">{{ $informationContents['company_established'] }}</h4>
                         </div>
                     </div>
                     <div class="project-box__item">

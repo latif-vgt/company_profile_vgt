@@ -14,6 +14,8 @@ class ServiceController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view('service');
+        $informationContents = $request->data_information_contents;
+
+        return view('service', compact('informationContents'));
     }
 }

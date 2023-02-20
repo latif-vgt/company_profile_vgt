@@ -90,49 +90,6 @@
     </div>
 </section>
 
-<!--============================== Work Process ==============================-->
-<section class="process-wrap1 space-top space-extra-bottom" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/process-bg-3-1.jpg') }}">
-    <div class="container wow fadeInUp" data-wow-delay="0.2s">
-        <div class="row justify-content-center text-center">
-            <div class="col-xl-6">
-                <div class="title-area">
-                    <span class="sec-subtitle">What We Do For You</span>
-                    <h2 class="sec-title3 h1">Our Specialization</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-between">
-            <div class="col-md-4 col-xl-auto process-style2">
-                <div class="process-arrow"><img src="{{ URL::asset('techbiz-it/assets/img/icon/process-arrow-2-1.png') }}" alt="arrow"></div>
-                <div class="process-icon">
-                    <img src="{{ URL::asset('techbiz-it/assets/img/icon/process-1-1.png') }}" alt="icon">
-                    <span class="process-number">01</span>
-                </div>
-                <h3 class="process-title h5">Project Planning</h3>
-                <p class="process-text">Internal or "organic" sources without turnkey growth strategies. Seamlessly promote client-centered</p>
-            </div>
-            <div class="col-md-4 col-xl-auto process-style2">
-                <div class="process-arrow"><img src="{{ URL::asset('techbiz-it/assets/img/icon/process-arrow-2-1.png') }}" alt="arrow"></div>
-                <div class="process-icon">
-                    <img src="{{ URL::asset('techbiz-it/assets/img/icon/process-1-2.png') }}" alt="icon">
-                    <span class="process-number">02</span>
-                </div>
-                <h3 class="process-title h5">Request A Meeting</h3>
-                <p class="process-text">Internal or "organic" sources without turnkey growth strategies. Seamlessly promote client-centered</p>
-            </div>
-            <div class="col-md-4 col-xl-auto process-style2">
-                <div class="process-arrow"><img src="{{ URL::asset('techbiz-it/assets/img/icon/process-arrow-2-1.png') }}" alt="arrow"></div>
-                <div class="process-icon">
-                    <img src="{{ URL::asset('techbiz-it/assets/img/icon/process-1-3.png') }}" alt="icon">
-                    <span class="process-number">03</span>
-                </div>
-                <h3 class="process-title h5">Start Building</h3>
-                <p class="process-text">Internal or "organic" sources without turnkey growth strategies. Seamlessly promote client-centered</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!--============================== Testimonial Area ==============================-->
 <section class=" space-top space-extra-bottom">
     <div class="container wow fadeInUp" data-wow-delay="0.2s">
