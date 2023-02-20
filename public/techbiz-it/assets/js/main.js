@@ -10,10 +10,10 @@
     04. Sticky fix
     05. Scroll To Top
     06. Set Background Image
-    07. Hero Slider Active 
+    07. Hero Slider Active
     08. Global Slider
     09. Ajax Contact Form
-    10. Popup Sidemenu   
+    10. Popup Sidemenu
     11. Magnific Popup
     12. Section Position
     13. Filter
@@ -196,12 +196,12 @@
       return vsHslide.data(data);
     }
 
-    vsHslide.on('sliderDidLoad', function (event, slider) { 
+    vsHslide.on('sliderDidLoad', function (event, slider) {
       var customNav = '.ls-custom-dot';
       var navDom = 'data-slide-go';
-      var currentSlide = slider.slides.current.index; // current Slide index 
+      var currentSlide = slider.slides.current.index; // current Slide index
       var i = 1;
-      // Set Attribute 
+      // Set Attribute
       $(customNav).each(function () {
         $(this).attr(navDom, i)
         i++
@@ -263,7 +263,7 @@
   $('.vs-carousel').each(function () {
     var vsSlide = $(this);
 
-    // Collect Data 
+    // Collect Data
     var d =  (data)=>{
       return vsSlide.data(data);
     }
@@ -272,7 +272,7 @@
     var prevButton = '<button type="button" class="slick-prev"><i class="' + d('prev-arrow') + '"></i></button>',
       nextButton = '<button type="button" class="slick-next"><i class="' + d('next-arrow') + '"></i></button>';
 
-    // Function For Custom Arrow Btn 
+    // Function For Custom Arrow Btn
     $('[data-slick-next]').each(function () {
       $(this).on('click', function (e) {
         e.preventDefault()
@@ -301,7 +301,7 @@
       arrows: (d('arrows') ? true : false),
       speed: (d('speed') ? d('speed') : 1000),
       asNavFor: (d('asnavfor') ? d('asnavfor') : false),
-      autoplay: ((d('autoplay') == false) ? false : false),
+      autoplay: d("autoplay") ? true : false,
       infinite: ((d('infinite') == false) ? false : true),
       slidesToShow: (d('slide-show') ? d('slide-show') : 1),
       adaptiveHeight: (d('adaptive-height') ? true : false),
@@ -517,7 +517,7 @@
         var sectionHeight = Math.floor(section.height() / 2), // Main Height of section
           posValue = convertInteger(section.attr(getPosValue)), // positioning value
           posData = section.attr(mainAttr), // how much to position
-          posFor = section.attr(posAttr), // On Which section is for positioning 
+          posFor = section.attr(posAttr), // On Which section is for positioning
           parentPT = convertInteger($(posFor).css('padding-top')), // Default Padding of  parent
           parentPB = convertInteger($(posFor).css('padding-bottom')); // Default Padding of  parent
 
@@ -575,8 +575,8 @@
         }
       });
     };
-    
-    // Menu Active Class 
+
+    // Menu Active Class
     $($filterMenu).on('click', 'button', function (event) {
       event.preventDefault();
       var filterValue = $(this).attr('data-filter');
@@ -609,10 +609,10 @@
     }
   };
   onePageNav('.onepage-nav, .main-menu, .vs-mobile-menu');
-  
-  
-  
-  
+
+
+
+
   /*----------- 15. WOW.js Animation ----------*/
   var wow = new WOW({
     boxClass: 'wow', // animated element css class (default is wow)
@@ -633,7 +633,7 @@
     btnHiehgt = element.css('height'),
     btnLeft = element.position().left,
     btnTop = element.position().top;
-    element.addClass('active').siblings().removeClass('active');      
+    element.addClass('active').siblings().removeClass('active');
     indicator.css({
       left: btnLeft + 'px',
       top: btnTop + 'px',
@@ -644,9 +644,9 @@
 
   $('.login-tab a').each(function(){
     var link = $(this);
-    if (link.hasClass('active')) setPos(link);  
+    if (link.hasClass('active')) setPos(link);
     link.on('mouseover', function(){
-      setPos($(this));        
+      setPos($(this));
     });
   })
 
@@ -659,7 +659,7 @@
       var color = e.target.value;
       $('body').css('--theme-color', color)
     });
-    
+
     $('#plate-reset').on('click', function(){
       $('body').css('--theme-color', '');
       $('#plate-color').val(oldValue);
@@ -669,8 +669,8 @@
       $('.vs-color-plate').toggleClass('open');
     });
   }
-  
-  
+
+
 
 
 

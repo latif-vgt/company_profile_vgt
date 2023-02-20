@@ -123,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <div class="row vs-carousel" data-slide-show="3" data-md-slide-show="2">
+        <div class="row vs-carousel" data-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-autoplay-speed="1000">
             @foreach ($bodTeams as $key => $value)
             <div class="col-xl-4">
                 <div class="team-style2">
