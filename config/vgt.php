@@ -20,5 +20,13 @@ return [
     ],
     'picture_information_content' => [
         'picture_homepage_hero' => 'hero-2-1.jpg'
+    ],
+    'role_company_people' => [
+        'bod',
+        'web programmer',
+        'machine learning programmer',
+        'admin',
+        'qa',
+        'project manager'
     ]
 ];

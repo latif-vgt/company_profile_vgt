@@ -66,7 +66,7 @@
 @endif
 
 <!--============================== About Our Company ==============================-->
-<section class=" space" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/ab-bg-2-1.jpg') }}" id="aboutv2">
+<section class="space" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/ab-bg-2-1.jpg') }}" id="aboutv2">
     <div class="container">
         <div class="row gx-60">
             <div class=" col-xl-6 mb-50 mb-xl-0  wow fadeInUp" data-wow-delay="0.2s">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class=" col-xl-6 align-self-center text-center text-xl-start">
+            <div class="col-xl-6 align-self-center text-center text-xl-start">
                 <span class="sec-subtitle"><i class="fas fa-bring-forward"></i>ABOUT OUR COMPANY</span>
                 <h2 class="sec-title3 h1">Connecting people & technology</h2>
                 <p class="mb-4 pb-2 pe-xl-5">Technology can inspire innovation by providing new tools and ways of thinking that can help people solve problems and think creatively.</p>
@@ -112,8 +112,9 @@
 </section>
 
 <!--============================== Team Area ==============================-->
-<section class=" space">
-    <div class="container  wow fadeInUp" data-wow-delay="0.2s">
+@if (count($bodTeams) > 0)
+<section class="space">
+    <div class="container wow fadeInUp" data-wow-delay="0.2s">
         <div class="row justify-content-center text-center">
             <div class="col-xl-6">
                 <div class="title-area">
@@ -123,12 +124,13 @@
             </div>
         </div>
         <div class="row vs-carousel" data-slide-show="3" data-md-slide-show="2">
+            @foreach ($bodTeams as $key => $value)
             <div class="col-xl-4">
                 <div class="team-style2">
                     <div class="team-img">
                         <div class="team-shape1"></div>
                         <div class="team-shape2"></div>
-                        <a href="#"><img src="{{ URL::asset('techbiz-it/assets/img/team/t-2-1.jpg') }}" alt="image"></a>
+                        <a href="#"><img src="{{ asset('storage/company-people') . '/' . $value['photo'] }}" alt="image"></a>
                         <div class="team-social">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -138,74 +140,16 @@
                         </div>
                     </div>
                     <div class="team-content">
-                        <h3 class="team-title h5"><a class="text-inherit" href="#">Grayson Gabriel</a></h3>
-                        <p class="team-degi">Cheif Expert</p>
+                        <h3 class="team-title h5"><a class="text-inherit" href="#">{{ $value['name'] }}</a></h3>
+                        <p class="team-degi">{{ $value['role_company_people']['name'] }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
-                <div class="team-style2">
-                    <div class="team-img">
-                        <div class="team-shape1"></div>
-                        <div class="team-shape2"></div>
-                        <a href="#"><img src="{{ URL::asset('techbiz-it/assets/img/team/t-2-2.jpg') }}" alt="image"></a>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <h3 class="team-title h5"><a class="text-inherit" href="#">Samuel Thomas</a></h3>
-                        <p class="team-degi">Cheif Expert</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4">
-                <div class="team-style2">
-                    <div class="team-img">
-                        <div class="team-shape1"></div>
-                        <div class="team-shape2"></div>
-                        <a href="#"><img src="{{ URL::asset('techbiz-it/assets/img/team/t-2-3.jpg') }}" alt="image"></a>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <h3 class="team-title h5"><a class="text-inherit" href="#">William Lucas</a></h3>
-                        <p class="team-degi">Cheif Expert</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4">
-                <div class="team-style2">
-                    <div class="team-img">
-                        <div class="team-shape1"></div>
-                        <div class="team-shape2"></div>
-                        <a href="#"><img src="{{ URL::asset('techbiz-it/assets/img/team/t-2-4.jpg') }}" alt="image"></a>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <h3 class="team-title h5"><a class="text-inherit" href="#">Daniel Matthew</a></h3>
-                        <p class="team-degi">Cheif Expert</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
+@endif
 
 <!--============================== Latest Project ==============================-->
 <section class="space-top">
