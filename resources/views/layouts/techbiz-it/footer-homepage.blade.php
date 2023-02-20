@@ -1,4 +1,4 @@
-<footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/shape/bg-footer-1-1.jpg">
+<footer class="footer-wrapper footer-layout1" data-bg-src="{{ URL::asset('techbiz-it/assets/img/shape/bg-footer-1-1.jpg') }}">
     <div class="footer-top">
         <div class="container">
             <div class="row">
@@ -74,14 +74,6 @@
                                 <li><a href="#">Latest Posts</a></li>
                                 <li><a href="#">Help Center</a></li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-auto">
-                    <div class="widget footer-widget">
-                        <h3 class="widget_title">Office Maps</h3>
-                        <div class="footer-map">
-                            <iframe title="office location map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163720.11965853968!2d8.496481908353967!3d50.121347879150306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt%2C%20Germany!5e0!3m2!1sen!2sbd!4v1651732317319!5m2!1sen!2sbd" width="200" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>

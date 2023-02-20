@@ -11,25 +11,12 @@
             <img width="1920" height="980" src="{{ URL::asset('techbiz-it/assets/img/hero/hero-2-1.jpg') }}" class="ls-bg" alt="slider-bg" />
             <img width="664" height="522" src="{{ URL::asset('techbiz-it/assets/img/hero/hero-shape-2-2.png') }}" class="ls-l ls-hide-phone ls-img-layer d-hd-none" alt="image" style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; border-style:solid; border-color:#000; background-position:0% 0%; background-repeat:no-repeat; top:463px; left:-6px;" data-ls="offsetxin:left; offsetyin:bottom; durationin:1500; delayin:1400; easingin:easeOutQuint; offsetxout:left; offsetyout:bottom;">
             <img width="1923" height="90" src="{{ URL::asset('techbiz-it/assets/img/hero/hero-shape-2-1.png') }}" class="ls-l ls-hide-phone ls-img-layer d-hd-none" alt="hero shape" style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; top:894px; left:-13px;" data-ls="easingin:easeOutQuint; static:forever;">
-            <h1 style="top:370px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:72px; color:#ffffff; font-family:Exo; width:1000px;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
-                Excellent IT services for
-            </h1>
-            <h1 style="top:455px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:72px; font-family:Exo; color:#ffffff; text-transform:none; background-color:transparent; background-repeat:no-repeat; cursor:auto; width:1000px;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetxin:-200; durationin:1500; delayin:200; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint;">
-                your success
-            </h1>
             <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; border-style:solid; border-color:#000; background-position:0% 0%; background-repeat:no-repeat; left:352px; top:674px; width:120px; height:120px; line-height:120px;" class="ls-l ls-play-btn ls-hide-tablet ls-hide-phone ls-html-layer" data-ls="offsetxin:-100; durationin:1500; delayin:1000; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; bgcolorout:transparent; colorout:transparent;">
                 <a href="https://www.youtube.com/watch?v=4QylOvVaE00" class="play-btn style4 popup-video"><i class="fas fa-play"></i></a>
             </div>
             <ls-layer style="font-size:24px; color:#ffffff; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:700; border-style:solid; border-color:#000; background-position:0% 0%; background-repeat:no-repeat; font-family:Exo; background-color:transparent; cursor:auto; left:502px; top:705px;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetxin:100; durationin:1500; delayin:1100; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:100; durationout:1500; easingout:easeOutQuint; bgcolorout:transparent; colorout:transparent;">
                 Watch Our Story
             </ls-layer>
-            <div style="font-size:16px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; letter-spacing:0px; border-style:solid; border-color:#000; background-position:0% 0%; background-repeat:no-repeat; font-family:Exo; color:#ffffff; left:502px; top:740px;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetxin:100; durationin:1500; delayin:1300; bgcolorin:transparent; colorin:transparent; offsetxout:100; durationout:1500; easingout:easeOutQuint;">Subscribe Now</div>
-            <h1 style="top:404px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:110px; color:#ffffff; font-family:Exo; width:1200px;" class="ls-l ls-hide-desktop ls-hide-phone ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
-                Excellent IT services for
-            </h1>
-            <h1 style="top:511px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:110px; font-family:Exo; color:#ffffff; text-transform:none; border-style:solid; border-color:#000; background-color:transparent; background-repeat:no-repeat; cursor:auto; width:1200px;" class="ls-l ls-hide-desktop ls-hide-phone ls-text-layer" data-ls="offsetxin:-200; durationin:1500; delayin:200; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint;">
-                your success
-            </h1>
             <div style="top:713px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:24px; width:1000px; height:28px;" class="ls-l ls-hide-desktop ls-hide-phone ls-html-layer" data-ls="offsetyin:50; durationin:1500; delayin:900; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">
                 <div class="ls-btn-group justify-content-center">
                     <a href="{{ route('about-us') }}" class="vs-btn ls-hero-btn">ABOUT US<i class="far fa-arrow-right"></i></a>
@@ -39,12 +26,6 @@
             <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; border-style:solid; border-color:#000; background-position:0% 0%; background-repeat:no-repeat; left:50%; top:145px; width:120px; height:120px; line-height:120px;" class="ls-l ls-play-btn ls-hide-desktop ls-hide-phone ls-html-layer" data-ls="offsetxin:-100; durationin:1500; delayin:1000; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; bgcolorout:transparent; colorout:transparent;">
                 <a href="https://www.youtube.com/watch?v=4QylOvVaE00" class="play-btn style4 popup-video"><i class="fas fa-play"></i></a>
             </div>
-            <h1 style="top:132px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:140px; color:#ffffff; font-family:Exo; width:1800px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
-                Excellent IT services for
-            </h1>
-            <h1 style="top:305px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:140px; font-family:Exo; color:#ffffff; text-transform:none; border-style:solid; border-color:#000; background-color:transparent; background-repeat:no-repeat; cursor:auto; width:1800px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-text-layer" data-ls="offsetxin:-200; durationin:1500; delayin:200; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint;">
-                your success
-            </h1>
             <div style="top:599px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:24px; width:1000px; height:28px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-html-layer" data-ls="offsetyin:50; durationin:1500; delayin:900; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">
                 <div class="ls-btn-group justify-content-center">
                     <a href="{{ route('about-us') }}" class="vs-btn ls-hero-btn">ABOUT US<i class="far fa-arrow-right"></i></a>
@@ -56,8 +37,9 @@
 </section>
 
 <!--============================== Features Area ==============================-->
-<section class="z-index-common  space-top" data-sec-pos="bottom" data-pos-amount="30px" data-pos-for="#aboutv2">
-    <div class="container  wow fadeInUp" data-wow-delay="0.2s">
+@if (count($ourServices) > 0)
+<section class="z-index-common space-top" data-sec-pos="bottom" data-pos-amount="30px" data-pos-for="#aboutv2">
+    <div class="container wow fadeInUp" data-wow-delay="0.2s">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6 col-xxl-3 text-center text-xxl-start">
                 <div class="title-area">
@@ -67,43 +49,21 @@
             </div>
             <div class="col-xxl-9">
                 <div class="row vs-carousel feature-slide2 text-center text-xxl-start" data-slide-show="3" data-md-slide-show="2">
+                    @foreach ($ourServices as $key => $value)
                     <div class="col-xl-4">
                         <div class="feature-style2">
-                            <div class="feature-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/fe-2-1.png') }}" alt="Features"></div>
-                            <h3 class="feature-title h5"><a class="text-inherit" href="#">IT Prototyping Consultation</a></h3>
-                            <p class="feature-text">Seize magnetic before visa alignment network wireless whereas frictionless</p>
-                            <a href="#" class="link-btn">Read Details<i class="far fa-arrow-right"></i></a>
+                            <div class="feature-icon"><img src="{{ asset('storage/service-icon') . '/' . $value['icon'] }}" alt="OurServices"></div>
+                            <h3 class="feature-title h5"><a class="text-inherit" href="#">{{ $value['name'] }}</a></h3>
+                            <p class="feature-text">{{ $value['description'] }}</p>
                         </div>
                     </div>
-                    <div class="col-xl-4">
-                        <div class="feature-style2">
-                            <div class="feature-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/fe-2-2.png') }}" alt="Features"></div>
-                            <h3 class="feature-title h5"><a class="text-inherit" href="#">Infrastructure Solution</a></h3>
-                            <p class="feature-text">Seize magnetic before visa alignment network wireless whereas frictionless</p>
-                            <a href="#" class="link-btn">Read Details<i class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="feature-style2">
-                            <div class="feature-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/fe-2-3.png') }}" alt="Features"></div>
-                            <h3 class="feature-title h5"><a class="text-inherit" href="#">AI / Smart Application</a></h3>
-                            <p class="feature-text">Seize magnetic before visa alignment network wireless whereas frictionless</p>
-                            <a href="#" class="link-btn">Read Details<i class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="feature-style2">
-                            <div class="feature-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/fe-2-4.png') }}" alt="Features"></div>
-                            <h3 class="feature-title h5"><a class="text-inherit" href="#">App Development</a></h3>
-                            <p class="feature-text">Seize magnetic before visa alignment network wireless whereas frictionless</p>
-                            <a href="#" class="link-btn">Read Details<i class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
     </div>
 </section>
+@endif
 
 <!--============================== About Our Company ==============================-->
 <section class=" space" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/ab-bg-2-1.jpg') }}" id="aboutv2">
@@ -117,7 +77,7 @@
                         <div class="award-box__shape"></div>
                         <div class="award-box__icon"><i class="fal fa-award"></i></div>
                         <div class="media-body">
-                            <p class="award-box__number">100+</p>
+                            <p class="award-box__number">50+</p>
                             <div class="award-box__text">Awards we won</div>
                         </div>
                     </div>
@@ -126,7 +86,7 @@
             <div class=" col-xl-6 align-self-center text-center text-xl-start">
                 <span class="sec-subtitle"><i class="fas fa-bring-forward"></i>ABOUT OUR COMPANY</span>
                 <h2 class="sec-title3 h1">Connecting people & technology</h2>
-                <p class="mb-4 pb-2 pe-xl-5">Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod ex tempor incididunt labore dolore magna aliquaenim ad minim veniam quis nostrud exercitation laboris.</p>
+                <p class="mb-4 pb-2 pe-xl-5">Technology can inspire innovation by providing new tools and ways of thinking that can help people solve problems and think creatively.</p>
                 <div class="row gx-60 mb-4 pb-1 gy-2 text-start justify-content-center justify-content-xl-start">
                     <div class="col-auto">
                         <div class="about-media">

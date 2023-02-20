@@ -16,7 +16,8 @@ class WelcomeController extends Controller
     {
         $informationContents = $request->data_information_contents;
         $clients = $request->data_clients;
+        $ourServices = $request->our_services;
 
-        return view('welcome', compact('informationContents', 'clients'));
+        return view('welcome', compact('informationContents', 'clients', 'ourServices'));
     }
 }

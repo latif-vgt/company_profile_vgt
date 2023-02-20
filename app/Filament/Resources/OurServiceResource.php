@@ -30,11 +30,11 @@ class OurServiceResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')->required()->unique(),
+                TextInput::make('name')->required()->unique(ignoreRecord: true),
 
                 Textarea::make('description')->nullable(),
 
-                FileUpload::make('photo')->disk('service-icon'),
+                FileUpload::make('icon')->disk('service-icon'),
 
                 Select::make('enabled')->required()
                     ->options([
