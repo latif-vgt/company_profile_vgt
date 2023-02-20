@@ -4,7 +4,7 @@
             <div class="row align-items-center justify-content-between gy-30">
                 <div class="col-sm-auto">
                     <div class="footer-top-logo">
-                        <a href="{{ route('welcome') }}"><img src="{{ URL::asset('vgt/logo-visi-18049.png') }}" alt="VisiGlobalTeknologi" class="logo"></a>
+                        <a href="{{ route('welcome') }}"><img style="width: 210px; height:100%" src="{{ URL::asset('vgt/white-vgt.png') }}" alt="VisiGlobalTeknologi" class="logo"></a>
                     </div>
                 </div>
                 <div class="col-sm-auto">

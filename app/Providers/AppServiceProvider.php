@@ -13,7 +13,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // helper
+
+        $this->app->bind(
+            'picture-information-content.helper',
+            \App\Helpers\PictureInformationHelper::class
+        );
     }
 
     /**

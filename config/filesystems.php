@@ -60,6 +60,30 @@ return [
             'throw' => false,
         ],
 
+        'picture-information-content' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/picture-information-content'),
+            'url' => env('APP_URL').'/storage/picture-information-content',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
+        'company-people' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/company-people'),
+            'url' => env('APP_URL').'/storage/company-people',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
+        'service-icon' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/service-icon'),
+            'url' => env('APP_URL').'/storage/service-icon',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

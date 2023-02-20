@@ -41,7 +41,7 @@
             <div class="vs-menu-area text-center">
                 <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
                 <div class="mobile-logo">
-                    <a href="{{ route('welcome') }}"><img src="{{ URL::asset('vgt/logo-visi.png') }}" alt="VisiGlobalTeknologi" class="logo"></a>
+                    <a href="{{ route('welcome') }}"><img src="{{ URL::asset('vgt/no-white-vgt.png') }}" alt="VisiGlobalTeknologi" class="logo"></a>
                 </div>
                 <div class="vs-mobile-menu">
                     <ul>
@@ -75,7 +75,7 @@
                     <div class="row justify-content-between align-items-center gx-sm-0">
                         <div class="col">
                             <div class="header-logo">
-                                <a href="{{ route('welcome') }}"><img src="{{ URL::asset('vgt/logo-visi-18049.png') }}" alt="VisiGlobalTeknologi" class="logo"></a>
+                                <a href="{{ route('welcome') }}"><img style="width: 210px; height:100%" src="{{ URL::asset('vgt/no-white-vgt.png') }}" alt="VisiGlobalTeknologi" class="logo"></a>
                             </div>
                         </div>
                         <div class="col-auto header-info ">

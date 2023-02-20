@@ -19,5 +19,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@visiglobalteknologi.co.id',
             'password' => bcrypt('12345678')
         ]);
+
+        $this->call(InformationContentSeeder::class);
     }
 }

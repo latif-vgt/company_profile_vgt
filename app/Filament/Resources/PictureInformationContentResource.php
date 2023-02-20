@@ -4,40 +4,32 @@ namespace App\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Tables;
-use App\Models\Client;
 use Filament\Resources\Form;
 use Filament\Resources\Table;
 use Filament\Resources\Resource;
-use Filament\Forms\Components\Select;
-use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\ImageColumn;
+use App\Models\PictureInformationContent;
 use Filament\Forms\Components\FileUpload;
 use Illuminate\Database\Eloquent\Builder;
-use App\Filament\Resources\ClientResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\ClientResource\RelationManagers;
+use App\Filament\Resources\PictureInformationContentResource\Pages;
+use App\Filament\Resources\PictureInformationContentResource\RelationManagers;
 
-class ClientResource extends Resource
+class PictureInformationContentResource extends Resource
 {
-    protected static ?string $model = Client::class;
+    protected static ?string $model = PictureInformationContent::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-user-group';
+    protected static ?string $navigationIcon = 'heroicon-o-clipboard';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                TextInput::make('name')->required(),
+                TextInput::make('key')->required(),
 
-                FileUpload::make('logo')->disk('client-logo')->required(),
-
-                Select::make('enabled')->required()
-                    ->options([
-                            0 => 'No',
-                            1 => 'Yes'
-                    ])
+                FileUpload::make('picture')->disk('picture-information-content')->required()
             ]);
     }
 
@@ -45,11 +37,9 @@ class ClientResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('name'),
+                TextColumn::make('key'),
 
-                ImageColumn::make('logo')->disk('client-logo'),
-
-                IconColumn::make('enabled')->boolean()
+                ImageColumn::make('picture')->disk('picture-information-content')
             ])
             ->filters([
                 //
@@ -74,9 +64,9 @@ class ClientResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListClients::route('/'),
-            'create' => Pages\CreateClient::route('/create'),
-            'edit' => Pages\EditClient::route('/{record}/edit'),
+            'index' => Pages\ListPictureInformationContents::route('/'),
+            'create' => Pages\CreatePictureInformationContent::route('/create'),
+            'edit' => Pages\EditPictureInformationContent::route('/{record}/edit'),
         ];
     }
 }

@@ -7,26 +7,28 @@
 namespace App\Models;
 
 use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Collection;
 
 /**
- * Class Client
- * 
+ * Class OurService
+ *
  * @property int $id
  * @property string $name
- * @property string $logo
+ * @property string|null $description
+ * @property string|null $icon
  * @property bool $enabled
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * 
+ *
+ * @property Collection|DocumentationOurWork[] $documentation_our_works
  * @property Collection|OurWork[] $our_works
  *
  * @package App\Models
  */
-class Client extends Model
+class OurService extends Model
 {
-	protected $table = 'clients';
+	protected $table = 'our_services';
 
 	protected $casts = [
 		'enabled' => 'bool'
@@ -34,9 +36,15 @@ class Client extends Model
 
 	protected $fillable = [
 		'name',
-		'logo',
+		'description',
+		'icon',
 		'enabled'
 	];
+
+	public function documentation_our_works()
+	{
+		return $this->hasMany(DocumentationOurWork::class);
+	}
 
 	public function our_works()
 	{
