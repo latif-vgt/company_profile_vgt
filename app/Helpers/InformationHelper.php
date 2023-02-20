@@ -2,7 +2,7 @@
 
 namespace App\Helpers;
 
-class PictureInformationHelper
+class InformationHelper
 {
 
 }

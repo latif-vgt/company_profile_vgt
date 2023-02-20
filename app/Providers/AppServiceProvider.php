@@ -19,6 +19,11 @@ class AppServiceProvider extends ServiceProvider
             'picture-information-content.helper',
             \App\Helpers\PictureInformationHelper::class
         );
+
+        $this->app->bind(
+            'information-content.helper',
+            \App\Helpers\InformationHelper::class
+        );
     }
 
     /**

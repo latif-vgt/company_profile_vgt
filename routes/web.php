@@ -16,9 +16,9 @@ use App\Http\Controllers\WelcomeController;
 |
 */
 
-Route::get('/', WelcomeController::class)->name('welcome');
-Route::get('about-us', AboutUsController::class)->name('about-us');
-Route::get('service', ServiceController::class)->name('service');
+Route::get('/', WelcomeController::class)->name('welcome')->middleware(['company.profile.data']);
+Route::get('about-us', AboutUsController::class)->name('about-us')->middleware(['company.profile.data']);
+Route::get('service', ServiceController::class)->name('service')->middleware(['company.profile.data']);
 
 Route::get('contact', function () {
 })->name('contact');

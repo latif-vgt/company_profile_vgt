@@ -86,11 +86,10 @@
                         <div class="col-auto d-none d-md-block">
                             <div class="header-social">
                                 <span class="social-title">Follow Us On: </span>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a target="_blank" href="{{ $informationContents['company_socmed_twitter'] }}"><i class="fab fa-twitter"></i></a>
+                                <a target="_blank" href="{{ $informationContents['company_socmed_instagram'] }}"><i class="fab fa-instagram"></i></a>
+                                <a target="_blank" href="{{ $informationContents['company_socmed_linkedin'] }}"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="{{ $informationContents['company_socmed_youtube'] }}"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>

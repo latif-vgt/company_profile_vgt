@@ -11,7 +11,6 @@
             <img width="1920" height="980" src="{{ URL::asset('techbiz-it/assets/img/hero/hero-2-1.jpg') }}" class="ls-bg" alt="slider-bg" />
             <img width="664" height="522" src="{{ URL::asset('techbiz-it/assets/img/hero/hero-shape-2-2.png') }}" class="ls-l ls-hide-phone ls-img-layer d-hd-none" alt="image" style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; border-style:solid; border-color:#000; background-position:0% 0%; background-repeat:no-repeat; top:463px; left:-6px;" data-ls="offsetxin:left; offsetyin:bottom; durationin:1500; delayin:1400; easingin:easeOutQuint; offsetxout:left; offsetyout:bottom;">
             <img width="1923" height="90" src="{{ URL::asset('techbiz-it/assets/img/hero/hero-shape-2-1.png') }}" class="ls-l ls-hide-phone ls-img-layer d-hd-none" alt="hero shape" style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; top:894px; left:-13px;" data-ls="easingin:easeOutQuint; static:forever;">
-            <p style="font-size:20px; text-align:center; font-style:normal; text-decoration:none; text-transform:none; font-weight:600; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:Exo; color:#ffffff; top:315px; left:50%; width:1000px;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetxin:300; durationin:1500; delayin:400; easingin:easeOutQuint; offsetxout:300; durationout:1500; easingout:easeOutQuint;">SUCCESS YOUR BUSINESS</p>
             <h1 style="top:370px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:72px; color:#ffffff; font-family:Exo; width:1000px;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
                 Excellent IT services for
             </h1>
@@ -25,7 +24,6 @@
                 Watch Our Story
             </ls-layer>
             <div style="font-size:16px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; letter-spacing:0px; border-style:solid; border-color:#000; background-position:0% 0%; background-repeat:no-repeat; font-family:Exo; color:#ffffff; left:502px; top:740px;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetxin:100; durationin:1500; delayin:1300; bgcolorin:transparent; colorin:transparent; offsetxout:100; durationout:1500; easingout:easeOutQuint;">Subscribe Now</div>
-            <p style="text-align:center; font-style:normal; text-decoration:none; text-transform:none; font-weight:600; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:Exo; color:#ffffff; top:310px; left:50%; width:1000px; font-size:40px;" class="ls-l ls-hide-desktop ls-hide-phone ls-text-layer" data-ls="offsetxin:300; durationin:1500; delayin:400; easingin:easeOutQuint; offsetxout:300; durationout:1500; easingout:easeOutQuint;">SUCCESS YOUR BUSINESS</p>
             <h1 style="top:404px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:110px; color:#ffffff; font-family:Exo; width:1200px;" class="ls-l ls-hide-desktop ls-hide-phone ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
                 Excellent IT services for
             </h1>
@@ -417,7 +415,7 @@
 <div class=" space" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/brand-bg-2-1.jpg') }}">
     <div class="container">
         <div class="row vs-carousel text-center" data-slide-show="5" data-md-slide-show="3" data-sm-slide-show="2" data-xs-slide-show="2">
-            @if ($clients->count() > 0)
+            @if (count($clients) > 0)
                 @foreach ($clients as $item)
                     <div class="col-auto"><img width="100" height="50" src="{{ \Storage::disk('client-logo')->url($item->logo) }}" alt="Client"></div>
                 @endforeach

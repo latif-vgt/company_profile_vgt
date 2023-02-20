@@ -15,8 +15,6 @@ class AboutUsController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $informationContents = InformationContent::get()->pluck('value', 'key')->toArray();
-
-        return view('about-us', compact('informationContents'));
+        return view('about-us');
     }
 }
