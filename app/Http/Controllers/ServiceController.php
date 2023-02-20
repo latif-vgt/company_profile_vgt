@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\OurService;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -15,7 +16,8 @@ class ServiceController extends Controller
     public function __invoke(Request $request)
     {
         $informationContents = $request->data_information_contents;
+        $ourServices = OurService::get()->toArray();
 
-        return view('service', compact('informationContents'));
+        return view('service', compact('informationContents', 'ourServices'));
     }
 }

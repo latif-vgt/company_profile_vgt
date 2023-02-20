@@ -14,66 +14,24 @@
 </div>
 
 <!--============================== Service Area ==============================-->
+@if (count($ourServices) > 0)
 <section class=" space-top space-extra-bottom">
     <div class="container wow fadeInUp" data-wow-delay="0.2s">
         <div class="row">
+            @foreach ($ourServices as $key => $value)
             <div class="col-md-6 col-lg-4">
                 <div class="service-style1 layout2">
                     <div class="service-bg" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
-                    <div class="service-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/sr-icon-1-1.png') }}" alt="Features"></div>
-                    <h3 class="service-title h5"><a href="#">Cloud Services</a></h3>
-                    <p class="service-text">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
-                    <a href="#" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
+                    <div class="service-icon"><img src="{{ \Storage::disk('service-icon')->url($value['icon']) }}" alt="Features"></div>
+                    <h3 class="service-title h5"><a href="#">{{ $value['name'] }}</a></h3>
+                    <p class="service-text">{{ $value['descriptiong'] }}</p>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="service-style1 layout2">
-                    <div class="service-bg" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
-                    <div class="service-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/sr-icon-1-2.png') }}" alt="Features"></div>
-                    <h3 class="service-title h5"><a href="#">UI Development</a></h3>
-                    <p class="service-text">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
-                    <a href="#" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="service-style1 layout2">
-                    <div class="service-bg" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
-                    <div class="service-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/sr-icon-1-3.png') }}" alt="Features"></div>
-                    <h3 class="service-title h5"><a href="#">Digital Marketing</a></h3>
-                    <p class="service-text">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
-                    <a href="#" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="service-style1 layout2">
-                    <div class="service-bg" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
-                    <div class="service-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/sr-icon-1-4.png') }}" alt="Features"></div>
-                    <h3 class="service-title h5"><a href="#">Web Development</a></h3>
-                    <p class="service-text">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
-                    <a href="#" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="service-style1 layout2">
-                    <div class="service-bg" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
-                    <div class="service-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/sr-icon-1-5.png') }}" alt="Features"></div>
-                    <h3 class="service-title h5"><a href="#">Software Services</a></h3>
-                    <p class="service-text">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
-                    <a href="#" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="service-style1 layout2">
-                    <div class="service-bg" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/sr-box-bg-1.jpg') }}></div>
-                    <div class="service-icon"><img src="{{ URL::asset('techbiz-it/assets/img/icon/sr-icon-1-6.png') }}" alt="Features"></div>
-                    <h3 class="service-title h5"><a href="#">Machine Learning</a></h3>
-                    <p class="service-text">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
-                    <a href="#" class="vs-btn style3">Read More<i class="far fa-long-arrow-right"></i></a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
+@endif
 
 <!--============================== CTA Area ==============================-->
 <section class="z-index-common space" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/cta-bg-1-2.jpg') }}">
