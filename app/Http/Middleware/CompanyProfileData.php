@@ -24,11 +24,11 @@ class CompanyProfileData
         $clients = Client::where('enabled', 1)->get()->toArray();
         $informationContents = InformationContent::get()->pluck('value', 'key')->toArray();
         $ourServices = OurService::get()->toArray();
-        $bodTeams = CompanyPeople::with(['role_company_people'])->where('role_company_people_id', RoleCompanyPeople::where('name', 'bod')->first()->id)->get()->toArray();
+        $teams = CompanyPeople::with(['role_company_people'])->get()->toArray();
         $request->data_information_contents = $informationContents;
         $request->data_clients = $clients;
         $request->our_services = $ourServices;
-        $request->bod_teams = $bodTeams;
+        $request->teams = $teams;
 
         return $next($request);
     }

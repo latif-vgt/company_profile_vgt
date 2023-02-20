@@ -15,6 +15,8 @@ class AboutUsController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view('about-us');
+        $informationContents = $request->data_information_contents;
+
+        return view('about-us', compact('informationContents'));
     }
 }

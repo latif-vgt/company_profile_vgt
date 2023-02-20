@@ -3,13 +3,13 @@
 return [
     'information_content' => [
         'company_socmed_twitter' => '#',
-        'company_socmed_linkedin' => '#',
-        'company_socmed_youtube' => '#',
+        'company_socmed_linkedin' => 'https://www.linkedin.com/company/visi-global-teknologi/',
+        'company_socmed_youtube' => 'https://www.youtube.com/@visiglobalteknologi6686',
         'company_socmed_instagram' => '#',
         'company_profile_video' => 'https://www.youtube.com/watch?v=4QylOvVaE00',
-        'company_slogan_title' => '#',
+        'company_slogan_title' => 'Innovative solutions for a connected future',
         'company_slogan_detail' => '#',
-        'company_category' => '#',
+        'company_category' => 'T',
         'company_established' => '#',
         'company_address' => '#',
         'company_about_us' => '#',

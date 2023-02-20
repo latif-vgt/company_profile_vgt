@@ -37,7 +37,7 @@
                         <div class="project-box__icon"><i class="fas fa-layer-group"></i></div>
                         <div class="media-body">
                             <span class="project-box__label">Category:</span>
-                            <h4 class="project-box__info">IT Solution, Technology</h4>
+                            <h4 class="project-box__info">{{ $informationContents['company_category'] }}</h4>
                         </div>
                     </div>
                     <div class="project-box__item">

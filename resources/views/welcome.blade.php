@@ -17,6 +17,9 @@
             <ls-layer style="font-size:24px; color:#ffffff; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:700; border-style:solid; border-color:#000; background-position:0% 0%; background-repeat:no-repeat; font-family:Exo; background-color:transparent; cursor:auto; left:502px; top:705px;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetxin:100; durationin:1500; delayin:1100; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:100; durationout:1500; easingout:easeOutQuint; bgcolorout:transparent; colorout:transparent;">
                 Watch Our Story
             </ls-layer>
+            <h1 style="top:370px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:72px; color:#ffffff; font-family:Exo; width:1000px;" class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
+                {{ $informationContents['company_slogan_title'] }}
+            </h1>
             <div style="top:713px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:24px; width:1000px; height:28px;" class="ls-l ls-hide-desktop ls-hide-phone ls-html-layer" data-ls="offsetyin:50; durationin:1500; delayin:900; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">
                 <div class="ls-btn-group justify-content-center">
                     <a href="{{ route('about-us') }}" class="vs-btn ls-hero-btn">ABOUT US<i class="far fa-arrow-right"></i></a>
@@ -48,7 +51,7 @@
                 </div>
             </div>
             <div class="col-xxl-9">
-                <div class="row vs-carousel feature-slide2 text-center text-xxl-start" data-slide-show="3" data-md-slide-show="2">
+                <div class="row vs-carousel" data-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-autoplay-speed="2000">
                     @foreach ($ourServices as $key => $value)
                     <div class="col-xl-4">
                         <div class="feature-style2">
@@ -112,7 +115,7 @@
 </section>
 
 <!--============================== Team Area ==============================-->
-@if (count($bodTeams) > 0)
+@if (count($teams) > 0)
 <section class="space">
     <div class="container wow fadeInUp" data-wow-delay="0.2s">
         <div class="row justify-content-center text-center">
@@ -123,8 +126,8 @@
                 </div>
             </div>
         </div>
-        <div class="row vs-carousel" data-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-autoplay-speed="1000">
-            @foreach ($bodTeams as $key => $value)
+        <div class="row vs-carousel" data-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-autoplay-speed="2000">
+            @foreach ($teams as $key => $value)
             <div class="col-xl-4">
                 <div class="team-style2">
                     <div class="team-img">
