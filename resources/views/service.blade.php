@@ -24,7 +24,7 @@
                     <div class="service-bg" data-bg-src="{{ URL::asset('techbiz-it/assets/img/bg/sr-box-bg-1.jpg') }}"></div>
                     <div class="service-icon"><img src="{{ \Storage::disk('service-icon')->url($value['icon']) }}" alt="Features"></div>
                     <h3 class="service-title h5"><a href="#">{{ $value['name'] }}</a></h3>
-                    <p class="service-text">{{ $value['descriptiong'] }}</p>
+                    <p class="service-text">{{ $value['description'] }}</p>
                 </div>
             </div>
             @endforeach
